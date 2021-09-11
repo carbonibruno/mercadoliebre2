@@ -1,15 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-
-
+  <body>
     
-</body>
+    <header>
+      <div class="top-header">
+        <div class="logo">
+          <img src="img/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" />
+        </div>
+        <div class="form" action="#" method="GET">
+          <div class="input">Buscar productos, marcas y más</div>
+          <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+        <p>
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+      </div>
+    </header>
+
+    <section class="accesoUsuario">
+      <form action="/" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" name="nombre" id="nombre" minlegth="4" placeholder="Ingrese nombre y apellido"/><br>
+        
+        <label for="usuario">Nombre de Usuario:</label><br>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario" /> <br>
+        
+        <label for="date">Fecha de Nacimiento:</label><br>
+        <input type="date" name="date" id="date" placeholder="Nacimiento" />
+        <br>
+        <label for="domicilio">Domicilio</label> <br>
+        <input type="domicilio"name="date" id="domicilio" placeholder="Domicilio"/>
+        <br>
+        
+        <p>Perfil del Comprador:</p> <br>
+        <section id="Perfil">
+
+          <label for="profile"> Comprador  </label>
+          <input type="radio" name="profile" value="comprador"/>
+
+          <label for="profile">Vendedor    </label>
+          <input type="radio" name="profile" value="vendedor" />
+          
+                           
+        </section><br>
+
+        <section><p>Categorias de interes:</p><br>
+          
+          <label for="interes">Electro</label>
+          <input type="checkbox" name="interes" id="Electro" /><br>
+          <label for="interes">Moda</label>
+          <input type="checkbox" name="interes" id="Moda" /><br>
+          <label for="interes">Hogar</label>
+          <input type="checkbox" name="interes" id="Moda" /><br>
+          <label for="interes">Jugeteria</label>
+          <input type="checkbox" name="interes" id="Jugeteria"/><br>
+          <label for="interes">Vida Sana</label> 
+          <input type="checkbox" name="interes" id="Vida Sana"/><br>
+       
+        </section>
+          <br> 
+          <label for="foto">Cargar Foto:</label><br>
+          <input type="file" name="foto" id="foto" accept=".jpg"> <br>
+          <br>
+        
+        <div class="botones">
+          <button type="reset">Resetear</button><br>
+          <br>
+          <button type="submit">Enviar</button>
+        </div>
+        
+      </form>
+
+    </section>
+  </body>
 </html>
